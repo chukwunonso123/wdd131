@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +13,6 @@ body {
     background-color: #f2f2f2;
 }
 
-
 header {
     background-color: #333;
     color: #fff;
@@ -22,33 +20,23 @@ header {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
 }
 
 header h1 {
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
-    font-style: bold;
-    color: #ffffff;  
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
+    justify-content: space-around;
+    padding: 0.5em;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -56,58 +44,34 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
     padding: 2em;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-.card {
-    background-color: #ffffff;
-    padding: 1em;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.about-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-.card h2 {
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
-    font-style: bold;
-    color: #333;  
-    font-size: 24px;
+.about-text {
+    flex: 1;
 }
 
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+.about-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
-
-/* Footer Styles */
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 1em;
     text-align: center;
-    clear: both;
+    padding: 1em 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-/* Utility Styles */
-
-.rubik-vinyl-regular {
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
-    font-style: normal;
 }
