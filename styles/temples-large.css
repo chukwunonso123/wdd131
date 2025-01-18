@@ -1,0 +1,30 @@
+/* Large Screen Styles */
+
+@media only screen and (min-width: 769px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    figure {
+        margin: 10px;
+    }
+    figcaption {
+        font-size: 1.1em;
+    }
+    header {
+        padding: 2em;
+    }
+    nav ul {
+        justify-content: space-around;
+    }
+    nav li {
+        margin-right: 30px;
+    }
+    footer {
+        padding: 2em;
+    }
+}
