@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 const lastModifiedDate = document.lastModified;
 const footer = document.querySelector('footer');
 footer.innerHTML = `
-    <p>&copy; ${currentYear} Your Name</p>
+    <p>&copy; ${currentYear} Onyewuchi Chukwunonso AKA cyphernexu</p>
     <p>Last modified: ${lastModifiedDate}</p>
 `;
 window.addEventListener('resize', () => {
