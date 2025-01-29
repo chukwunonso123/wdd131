@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nigeria</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/nigerialandscape1.webp" media="(min-width: 768px)">
+        <img src="images/nigerialandscape1.webp" alt="Beautiful Japanese landscape">
+      </picture>
+      <div class="data-box">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 923,769 square kilometres</li>
+          <li><strong>Population:</strong> 232,679,478</li>
+          <li><strong>Capital:</strong> Abuja</li>
+          <li><strong>Languages:</strong> alot</li>
+          <li><strong>Currency:</strong> neria</li>
+          <li><strong>Time Zone:</strong> UTC+1</li>
+          <li><strong>Calling Code:</strong> +234</li>
+          <li><strong>Internet TLD:</strong> .mg</li>
+        </ul>
+      </div>
+    <section class="weather">
+      <h2>Weather <span class="weather-icon">⛅</span></h2>
+      <p>Temperature: <span id="temperature">8°C</span></p>
+      <p>Wind Speed: <span id="wind-speed">15 km/h</span></p>
+      <p>Wind Chill: <span id="wind-chill">Calculating...</span></p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy;  Onyewuchi Chukwunonoso <span id="current-year"></span>. Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
