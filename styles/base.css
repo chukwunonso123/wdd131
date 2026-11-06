@@ -1,0 +1,103 @@
+:root {
+  --blue: #1d4e77;
+  --dark: #333333;
+  --amber: #f2b138;
+  --white: #ffffff;
+  --text: #222222;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--white);
+}
+header { background: var(--blue); color: var(--white); text-align: center; }
+#course-title {
+  display: block;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.5rem;
+  padding: 1.1rem 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: var(--dark);
+}
+nav a {
+  flex: 1;
+  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding: 0.7rem 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+nav a:hover, nav a:focus-visible { background-color: var(--amber); color: var(--dark); }
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 1.2rem 0 0.4rem;
+}
+.card { border: 1px solid #bbb; border-radius: 8px; overflow: hidden; }
+.card h2 {
+  margin: 0;
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.05rem;
+  padding: 0.6rem;
+}
+.card-body { padding: 1rem; }
+.intro { display: flex; gap: 1rem; align-items: flex-start; }
+.intro p { margin-top: 0; }
+.portrait { width: 120px; height: auto; border: 1px solid #888; }
+.about h3 {
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 0.3rem;
+  margin: 1rem auto;
+  max-width: 70%;
+}
+.place { display: flex; gap: 1rem; align-items: flex-start; }
+.place p { margin: 0; }
+figure { margin: 0; text-align: center; flex: 0 0 140px; }
+figure img { width: 100%; height: auto; border: 1px solid #888; }
+figcaption { font-size: 0.8rem; font-style: italic; }
+.resources .card-body { display: flex; align-items: center; min-height: 80%; }
+.resources ul { line-height: 2; }
+.resources a { color: #0b4f9c; }
+footer {
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+footer p { margin: 0.2rem 0; }
+#lastModified { font-size: 0.85rem; color: #ffff99; }
+@media (min-width: 800px) {
+  main { grid-template-columns: 2fr 1fr; }
+}
+@media (max-width: 520px) {
+  .intro, .place { flex-direction: column; }
+  .portrait { align-self: center; }
+}
