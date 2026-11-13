@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria – WDD 131 Place Page – Chukwunonso</title>
+  <meta name="description" content="WDD 131 place page by Chukwunonso about Nigeria: key facts, population, languages, and current weather with wind chill.">
+  <meta name="author" content="Chukwunonso">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+  <main>
+    <picture class="hero">
+      <source media="(min-width: 700px)" srcset="images/nigeria-hero-large.webp" width="1400" height="560">
+      <img src="images/nigeria-hero-small.webp" alt="Stylized view of a rock dome rising over green land in Nigeria" width="640" height="420">
+    </picture>
+    <section class="data">
+      <h2>Nigeria Data</h2>
+      <ul>
+        <li><strong>Capital:</strong> Abuja</li>
+        <li><strong>Area:</strong> 923,768 km&sup2;</li>
+        <li><strong>Population:</strong> about 220 million</li>
+        <li><strong>Languages:</strong> English (official), Hausa, Yoruba, Igbo</li>
+        <li><strong>Currency:</strong> Naira (NGN)</li>
+        <li><strong>Independence:</strong> October 1, 1960</li>
+      </ul>
+    </section>
+    <section class="weather">
+      <h2>Weather</h2>
+      <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy" width="64" height="64">
+      <p><strong>Temperature:</strong> <span id="temp">9</span>&deg;C</p>
+      <p><strong>Conditions:</strong> Partly cloudy</p>
+      <p><strong>Wind:</strong> <span id="wind">12</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Chukwunonso | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
